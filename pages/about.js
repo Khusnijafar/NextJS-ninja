@@ -1,18 +1,15 @@
-import Head from "next/head";
-import Footer from "../comps/Footer";
-import Navbar from "../comps/Navbar";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
+import React from "react";
+import Head from 'next/head'
 
-export default function Home() {
+const about = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas"></meta>
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
+        <h1>About</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -31,10 +28,9 @@ export default function Home() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <Link href="/ninjas">
-          <a className={styles.btn}> See Ninja Listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default about;
